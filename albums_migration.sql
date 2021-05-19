@@ -8,12 +8,12 @@ CREATE TABLE IF NOT EXISTS albums (
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
     artist_name VARCHAR (100) NOT NULL,
     record_name VARCHAR (100) NOT NULL,
-    release_date DATE NOT NULL,
+    release_date INT UNSIGNED NOT NULL,
     sales DOUBLE UNSIGNED NOT NULL,
     genre VARCHAR (100) NOT NULL,
     PRIMARY KEY (id)
 );
 
-SELECT DATE_FORMAT(release_date, '%m/%d/%Y') FROM albums;
+/*SELECT DATE_FORMAT(release_date, '%Y') FROM albums;*/
 
 DESCRIBE albums;
