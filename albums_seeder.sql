@@ -35,3 +35,5 @@ VALUES
     ("Santana","Supernatural","1999","30","Latin rock"),
     ("Guns N' Roses","Appetite for Destruction","1987","30","Hard rock"),
     ("Elton John","Goodbye Yellow Brick Road","1973","30","rock, pop rock, glam rock");
+
+SELECT * FROM albums;
