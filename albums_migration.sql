@@ -11,7 +11,8 @@ CREATE TABLE IF NOT EXISTS albums (
     release_date INT UNSIGNED NOT NULL,
     sales DOUBLE UNSIGNED NOT NULL,
     genre VARCHAR (100) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    UNIQUE (artist_name, record_name)
 );
 
 /*SELECT DATE_FORMAT(release_date, '%Y') FROM albums;*/
